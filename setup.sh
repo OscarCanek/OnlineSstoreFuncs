@@ -28,7 +28,7 @@ for zipFile in ProductDetailsFunc OrderShippingFunc
 do
     mkdir $zipFile
     unzip -q $zipFile.zip -d $zipFile
-    cd $zipFile/bin/Debug/netcoreapp2.1
+    cd $zipFile/bin/Debug/netcoreapp3.1
     zip -q -r $CURRENT_DIR/$zipFile.PKG.zip ./*
     cd $CURRENT_DIR
 done
